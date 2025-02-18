@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="CSS/menu.css">
+    <!--Font Awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">  
+
+
+</head>
+<body>
+    
+    <header>
+        <div class="shopping-continue">
+            <a href="index.html">
+            <i class="fa-solid fa-chevron-left"></i></a>
+            <h1>Shopping Continue</h1>
+        </div> 
+    </header>
+    
+    <hr class="horizontal-line">
+
+    <section class="cart-page">
+        <h1>Shopping Cart</h1>
+        <p>You have <span id="cart-count">1</span> items in your cart</p>
+    </section>
+
+    <div class="food-container">
+        <div class="food-card">
+            <img src="photo/italypizza.jpg" alt="Combo Plate" class="food-image">
+            <div class="food-info">
+                <h3 class="food-title">Combo Plate</h3>
+                <p class="food-description">Extra cheese and topping</p>
+            </div>
+            <div class="quantity">
+                <span>1</span>
+                <button class="quantity-btn"><i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <span class="price">$681</span>
+            <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+        <div class="food-card">
+            <img src="photo/plate1.jpg" alt="Combo Plate" class="food-image">
+            <div class="food-info">
+                <h3 class="food-title">Combo Plate</h3>
+                <p class="food-description">Extra cheese and topping</p>
+            </div>
+            <div class="quantity">
+                <span>1</span>
+                <button class="quantity-btn"><i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <span class="price">$681</span>
+            <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+        <div class="food-card">
+            <img src="photo/rice.jpg" alt="Spanish Rice" class="food-image">
+            <div class="food-info">
+                <h3 class="food-title">Spanish Rice</h3>
+                <p class="food-description">Extra cheese and topping</p>
+            </div>
+            <div class="quantity">
+                <span>1</span>
+                <button class="quantity-btn"><i class="fa-solid fa-caret-up"></i>
+                    <i class="fa-solid fa-caret-down"></i></button>
+            </div>
+            <span class="price">$681</span>
+            <button class="delete-btn"><i class="fa-regular fa-trash-can"></i></button>
+        </div>
+    </div>
+
+    <div class="card-details">
+        <h3>Card Details</h3>
+        <label>Card type</label>
+        <div class="card-icons">
+            <img src="photo/mastercard.png" alt="MasterCard">
+            <img src="photo/visa.png" alt="VISA">
+            <img src="photo/rupay.png" alt="RuPay">
+            <button>See all</button>
+        </div>
+
+        
+        <div class="name-card">
+            <label>Name on card</label>
+            <input type="text" placeholder="Name">
+            <p>Name should be filled</p>
+        </div>
+
+        <div class="card-nummer">
+            <label>Card Number</label>
+            <input type="text" id="card-nummer" placeholder="1111 2222 3333 4444">
+        </div>
+    
+        <div class="expiry-cvv">
+            <div class="input-group">
+                <label for="expiration-date">Expiration Date</label>
+                <input type="text" id="expiration-date" placeholder="mm/yy">
+            </div>
+            <div class="input-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123">
+            </div>
+        </div>
+        <hr>
+        <div class="summary">
+            <p>Subtotal: <span>$1668</span></p>
+            <p>Shipping: <span>$4</span></p>
+            <p>Total (Tax incl.): <span>$1672</span></p>
+        </div>
+        <button class="checkout">$1672 <span>Checkout</span>
+            <img src="photo/shigjeta.png" alt=""></button>
+        </div>
+    </div>
+
+    <div class="success-modal" id="success-modal">
+        <div class="modal-content">
+        <h3>Order has been paid Successfully</h3>
+            <div class="checkmark">
+                <i class="fa-solid fa-check"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="Js/menu.js"></script>
+    <script src="Js/payment.js"></script>
+
+</body>
+</html>
